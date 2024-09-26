@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais legível */
+    background-color: #AEEEEE; /* Azul claro */
+    color: #333333; /* Texto cinza escuro para bom contraste */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%; /* Ajusta para ocupar 100% da largura da tela */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    background-color: #FFFFFF; /* Preto */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #007BFF; /* Azul */
+    border-radius: 8px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333; /* Azul */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #333333; /* Azul escuro */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF; /* Fundo escuro para a seção do cabeçalho */
+    padding: 20px;
+    border: 1px solid #007BFF; /* Azul */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    margin-bottom: 20px;
+}
+
+.header img {
+    border-radius: 50%;
+    width: 150px; /* Define a largura */
+    height: 150px; /* Define a altura para manter a imagem redonda */
+    object-fit: cover; /* Garante que a imagem preencha o espaço */
+}
+
+.intro {
+    flex: 1;
+    padding-left: 20px;
+    min-width: 250px;
+}
+
+.content {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; /* Permite que os cards fiquem em várias linhas, se necessário */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.experience, .projects-section {
+    background-color: #FFFFFF; /* Fundo branco para os cards */
+    color: #333333; /* Texto cinza escuro para o contraste */
+    padding: 20px;
+    border: 1px solid #007BFF; /* Azul */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    min-width: 300px; /* Largura mínima dos cards */
+    max-width: 400px; /* Largura máxima dos cards */
+    flex: 1; /* Garante que os cards se expandam proporcionalmente */
+    text-align: center; /* Centraliza o conteúdo interno */
+}
+
+.experience-logo {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Faz com que a imagem ocupe uma linha inteira */
+    margin: 0 auto 15px; /* Centraliza a imagem e adiciona espaço abaixo */
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr; /* Colunas empilhadas em telas pequenas */
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
