@@ -1,97 +1,153 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais legível */
-    background-color: #AEEEEE; /* Azul claro */
-    color: #333333; /* Texto cinza escuro para bom contraste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ECF8D4; /* Verde Claro */
+    color: #0D0502; /* Marrom Escuro/Preto */
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 100%; /* Ajusta para ocupar 100% da largura da tela */
+    max-width: 1200px; /* Ajustar para centralizar melhor */
     margin: 0 auto;
     padding: 20px;
 }
 
 nav {
-    background-color: #FFFFFF; /* Preto */
-    padding: 10px;
+    background-color: #CB8E5F; /* Caramelo */
+    color: #FFFFFF; /* Texto branco */
+    padding: 15px;
     text-align: center;
     margin-bottom: 20px;
-    border: 1px solid #007BFF; /* Azul */
     border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333333; /* Azul */
-    font-weight: bold;
+    color: #FFFFFF;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #333333; /* Azul escuro */
+    color: #E0DEAB; /* Bege Claro no hover */
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #FFFFFF; /* Fundo escuro para a seção do cabeçalho */
+    background-color: #FFFFFF;
     padding: 20px;
-    border: 1px solid #007BFF; /* Azul */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
-    margin-bottom: 20px;
+    border: 1px solid #CB8E5F; /* Caramelo */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
 }
 
 .header img {
     border-radius: 50%;
-    width: 150px; /* Define a largura */
-    height: 150px; /* Define a altura para manter a imagem redonda */
-    object-fit: cover; /* Garante que a imagem preencha o espaço */
+    width: 100px; /* Reduzido para se ajustar melhor */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
 .intro {
-    flex: 1;
-    padding-left: 20px;
-    min-width: 250px;
+    text-align: left; /* Alinhar à esquerda para destaque */
+    max-width: 600px;
 }
 
 .content {
     display: flex;
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    flex-wrap: wrap; /* Permite que os cards fiquem em várias linhas, se necessário */
+    flex-wrap: wrap;
+    justify-content: center; /* Centralizar os cards */
     gap: 30px;
     margin-top: 20px;
 }
 
 .experience, .projects-section {
-    background-color: #FFFFFF; /* Fundo branco para os cards */
-    color: #333333; /* Texto cinza escuro para o contraste */
-    padding: 20px;
-    border: 1px solid #007BFF; /* Azul */
+    background-color: #FFFFFF;
+    color: #0D0502; /* Marrom Escuro/Preto */
+    padding: 25px;
+    border: 1px solid #CB8E5F; /* Caramelo */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
-    min-width: 300px; /* Largura mínima dos cards */
-    max-width: 400px; /* Largura máxima dos cards */
-    flex: 1; /* Garante que os cards se expandam proporcionalmente */
-    text-align: center; /* Centraliza o conteúdo interno */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar a sombra */
+    width: 300px; /* Tamanho fixo para melhor alinhamento */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.experience-logo {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Faz com que a imagem ocupe uma linha inteira */
-    margin: 0 auto 15px; /* Centraliza a imagem e adiciona espaço abaixo */
+.experience:hover, .projects-section:hover {
+    transform: translateY(-10px); /* Leve elevação no hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Intensificar a sombra */
+}
+
+.experience-logo, .project-img {
+    width: 80px; /* Ajuste do tamanho das imagens */
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.experience-logo:hover, .project-img:hover {
+    transform: scale(1.1); /* Leve efeito de zoom */
+}
+
+.additional-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.left-box, .center-box, .right-box {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 30%; /* Ajuste das larguras para melhor alinhamento */
+    text-align: center;
+}
+
+.left-box img, .right-box img {
+    width: 100%; /* Ajustar largura total dentro da div */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-width: 100px; /* Manter o tamanho mais compacto */
+}
+
+.github-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #CB8E5F; /* Caramelo */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.github-link:hover {
+    background-color: #85685A; /* Marrom Médio no hover */
+    transform: scale(1.05); /* Leve aumento */
 }
 
 @media (max-width: 768px) {
-    .content {
-        grid-template-columns: 1fr; /* Colunas empilhadas em telas pequenas */
+    .content, .additional-content {
+        flex-direction: column; /* Empilha em telas pequenas */
+        align-items: center; /* Centraliza */
     }
-    .header {
-        flex-direction: column;
-        align-items: center;
+
+    .left-box, .center-box, .right-box {
+        width: 80%; /* Ajuste da largura para mobile */
+        margin-bottom: 20px; /* Espaço entre as seções */
     }
 }
