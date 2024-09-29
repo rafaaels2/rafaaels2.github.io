@@ -1,3 +1,27 @@
+/* Estilo para o nav principal */
+.top-nav {
+    background-color: #CB8E5F; /* Caramelo */
+    color: #FFFFFF; /* Texto branco */
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 20px;
+}
+
+.top-nav a {
+    margin: 0 20px;
+    border-radius: 0;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s;
+}
+
+.top-nav a:hover {
+    color: #E0DEAB; /* Bege Claro no hover */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ECF8D4; /* Verde Claro */
@@ -41,7 +65,6 @@ nav a:hover {
     align-items: center;
     background-color: #FFFFFF;
     padding: 20px;
-    border: 1px solid #CB8E5F; /* Caramelo */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 40px;
@@ -49,8 +72,8 @@ nav a:hover {
 
 .header img {
     border-radius: 50%;
-    width: 100px; /* Reduzido para se ajustar melhor */
-    height: 100px;
+    width: 200px; /* Reduzido para se ajustar melhor */
+    height: 200px;
     object-fit: cover;
     margin-right: 20px;
 }
@@ -72,7 +95,6 @@ nav a:hover {
     background-color: #FFFFFF;
     color: #0D0502; /* Marrom Escuro/Preto */
     padding: 25px;
-    border: 1px solid #CB8E5F; /* Caramelo */
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar a sombra */
     width: 300px; /* Tamanho fixo para melhor alinhamento */
@@ -140,7 +162,189 @@ nav a:hover {
     transform: scale(1.05); /* Leve aumento */
 }
 
+.prints-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #FFFFFF; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Título da seção */
+.prints-section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #007BFF; /* Azul */
+}
+
+/* Container para organizar os prints em uma linha */
+.prints-row {
+    display: flex;
+    justify-content: space-between; /* Espaço uniforme entre os prints */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 20px; /* Espaço entre os elementos */
+}
+
+/* Caixa individual de cada print */
+.print-box {
+    flex: 1;
+    min-width: 30%; /* Ajuste para o tamanho dos prints */
+    text-align: center;
+}
+
+/* Estilo das imagens */
+.print-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #D0D9E0; /* Borda cinza clara */
+    border-radius: 5px;
+}
+
+/* Centraliza o conteúdo dentro da .right-box */
+.right-box-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    height: 100%; /* Preenche toda a altura da div */
+}
+
+/* Estilo para a imagem clicável */
+.clickable-image {
+    width: 100%; /* Define a largura total dentro da div */
+    max-width: 600px; /* Ajuste para um tamanho ideal */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #ccc; /* Borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animação */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.clickable-image:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra no hover */
+}
+
+/* Estilo para o texto abaixo da imagem */
+.clickable-text {
+    font-size: 16px;
+    color: #555; /* Cor do texto */
+    margin-top: 10px; /* Espaçamento acima */
+}
+
+/* Estilo para o link da imagem */
+.image-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Para garantir que os elementos não escapem da área do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.image-link img {
+    width: 100%; /* Define a largura total dentro da div */
+    max-width: 600px; /* Ajuste para um tamanho ideal */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #ccc; /* Borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+.image-link:hover img {
+    transform: scale(1.05); /* Leve efeito de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+.image-link:hover .click-icon {
+    opacity: 1; /* Tornar o ícone visível no hover */
+    transform: translate(-50%, -50%) scale(1.2); /* Leve aumento do ícone */
+}
+
+.image-link .click-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    font-size: 40px; /* Tamanho do ícone */
+    color: rgba(255, 255, 255, 0.8); /* Cor do ícone */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    border-radius: 50%; /* Ícone circular */
+    padding: 10px;
+    pointer-events: none; /* Desabilita interação do ícone */
+    opacity: 0; /* Invisível por padrão */
+    transition: transform 0.3s, opacity 0.3s; /* Transição suave */
+    z-index: 2; /* Eleva o ícone acima da imagem */
+}
+
+.image-link:hover {
+    cursor: pointer; /* Cursor de link */
+}
+
+.prints-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px; /* Ajuste conforme necessário */
+    background-color: #f9f9f9; /* Cor de fundo da seção */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prints-description {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .prints-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* Centraliza os prints */
+  }
+  
+  .print {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tamanhos para os prints verticais */
+  .print-vertical {
+    width: 150px;  /* Defina o tamanho fixo para as imagens verticais */
+    height: 270px; /* Proporção para imagens em pé */
+  }
+  
+  /* Tamanhos para os prints horizontais */
+  .print-horizontal {
+    width: 300px;  /* Defina o tamanho fixo para as imagens horizontais */
+    height: 150px; /* Proporção para imagens deitadas */
+  }
+  
+  /* Estilos de imagem */
+  .print img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém o conteúdo proporcional dentro do container */
+    border-radius: 8px; /* Bordas arredondadas para as imagens */
+  }
+  
+
 @media (max-width: 768px) {
+    .top-nav {
+        font-size: 16px; /* Reduzir o tamanho da fonte no mobile */
+    }
+
+    .top-nav a {
+        display: block;
+        margin: 10px 0; /* Espaçamento vertical para links */
+    }
+
     .content, .additional-content {
         flex-direction: column; /* Empilha em telas pequenas */
         align-items: center; /* Centraliza */

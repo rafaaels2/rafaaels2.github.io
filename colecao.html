@@ -1,49 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coleção de Criações</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #F0F4F8; /* Cinza claro com toque de azul */
-            color: #333333; /* Texto cinza escuro */
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #FFFFFF; /* Branco */
-            border-bottom: 2px solid #D0D9E0; /* Cinza médio com toque de azul */
-            padding: 10px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #007BFF; /* Azul */
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-            color: #0056b3; /* Azul mais escuro */
-        }
-    </style>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <nav>
+        <!-- Barra de navegação -->
+        <nav class="top-nav">
             <a href="index.html">Portfólio de Projetos</a>
             <a href="colecao.html">Coleção de Criações</a>
         </nav>
+        
+        <!-- Área para Texto e Vídeos -->
+        <div class="additional-content">
+            <!-- Área de texto -->
+            <div class="left-box">
+                <h2>Capacitação</h2>
+                <p>Uma das experiências que mais me orgulho de ter vivido foi dar aulas para novos membros da empresa júnior onde trabalhei. Nos últimos dois anos, eu e o antigo membro João Pedro fomos responsáveis por montar o conteúdo das aulas sobre React Native. Cuidávamos de todo o processo: desde definir os temas e criar os slides, até lecionar e acompanhar os participantes. Surpreendentemente, ensinar se mostrou uma atividade que me trouxe muita felicidade, algo que eu jamais havia imaginado que gostaria tanto</p>
+            </div>
+        
+            <!-- Área para vídeos -->
+            <div class="right-box-video">
+                <!-- Imagem clicável -->
+                <a href="https://drive.google.com/drive/u/2/folders/1MeUMnHoCAikiGHQW5MdKLyrpMJB_yAOy" target="_blank">
+                    <img src="assets/Aula Teórica.png" alt="Conteúdo no Google Drive" class="clickable-image">
+                </a>
+                <!-- Texto abaixo da imagem -->
+                <p class="clickable-text">Clique na imagem para acessar o conteúdo da primeira aula</p>
+            </div>
+        </div>
+        
+               
 
-        <h1>Coleção de Criações</h1>
-        <p>Bem-vindo à Coleção de Criações! Aqui você pode explorar suas criações futuras.</p>
+        <!-- Seção 1: Descrição e 3 prints -->
+        <div class="prints-section">
+            <p>Vou usar esse espaço para falar um pouco mais sobre mim. Sou uma pessoa de certa forma sistemática e sempre gostei de ranquear e categorizar minhas preferências, e isso não mudou com o tempo. Uma das atividades que mais gosto de fazer é criar pequenas edições de imagens relacionadas a músicas que me marcam de alguma forma. É algo simples, mas que me traz muita satisfação</p>
+            <div class="prints-row">
+                <!-- Print 1 -->
+                <div class="print-box">
+                    <img src="assets/Feeding the Gods.png" alt="Print 1 do Projeto" class="print-image">
+                </div>
+                <!-- Print 2 -->
+                <div class="print-box">
+                    <img src="assets/Azul da Cor do Mar.png" alt="Print 2 do Projeto" class="print-image">
+                </div>
+                <!-- Print 3 -->
+                <div class="print-box">
+                    <img src="assets/To Ouvindo Alguém Me Chamar.png" alt="Print 3 do Projeto" class="print-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção 2: Descrição e 5 prints -->
+        <div class="prints-section">
+            <div class="prints-description">
+              <p>Por fim, reservei um espaço para as fotografias mais recentes que tirei nos jogos do Coritiba. Gosto muito dessas fotos, pois combinam uma das minhas grandes paixões com uma atividade que aprecio bastante. </p>
+              <div class="prints-grid">
+                <!-- Primeira imagem (em pé) -->
+                <div class="print print-vertical">
+                  <img src="assets/coritiba1.jpeg" alt="Print 1" />
+                </div>
+          
+                <!-- Segunda imagem (em pé) -->
+                <div class="print print-vertical">
+                  <img src="assets/coritiba3.jpeg" alt="Print 2" />
+                </div>
+          
+                <!-- Terceira imagem (deitada) -->
+                <div class="print print-horizontal">
+                  <img src="assets/coritiba2.jpeg" alt="Print 3" />
+                </div>
+          
+                <!-- Quarta imagem (em pé) -->
+                <div class="print print-vertical">
+                  <img src="assets/coritiba4.jpeg" alt="Print 4" />
+                </div>
+          
+                <!-- Quinta imagem (em pé) -->
+                <div class="print print-vertical">
+                  <img src="assets/coritiba5.jpeg" alt="Print 5" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
     </div>
 </body>
 </html>
